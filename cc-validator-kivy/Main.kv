@@ -1,0 +1,17 @@
+<CCLayout>:
+    orientation: 'vertical'
+    padding: 20
+    spacing: 10
+
+    TextInput:
+        id: kart; hint_text: "Kart numarası"; input_filter: 'int'
+    TextInput:
+        id: cvc; hint_text: "CVC"; input_filter: 'int'
+    TextInput:
+        id: ay; hint_text: "Ay (MM)"; input_filter: 'int'
+    TextInput:
+        id: yil; hint_text: "Yıl (YYYY)"; input_filter: 'int'
+    Button:
+        text: "Kontrol Et"; on_press: root.kontrol_et()
+    Label:
+        id: sonuc; text: ""
